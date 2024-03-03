@@ -1,0 +1,20 @@
+#divFather-Shapes-Properties{
+    /* width: 0px; */
+    /* background-size: 100% 100%; */
+    position: absolute;
+    height: 100%;
+    /* left: 5%; */
+    left: 80px;
+    width: 20%;
+    /* background-color: #999898; */
+    /* background-color: linear-gradient(20deg,rgba(0,0,0,0.75),rgba(198, 20, 20, 0.55)); */
+    background-image: linear-gradient(to right, rgba(103, 103, 103, 0.75), rgba(229, 227, 227, 0.55));
+
+    display: none;
+}
+@media (max-width: 700px) {
+    #divWithImgAndBox{
+        width: 50%;
+        left: 80px;
+    }
+}

@@ -1,0 +1,33 @@
+#loadDiv{
+    background-image: url(img/LoadAndSaveBackground.png);
+    background-position: center;
+    background-size: cover;
+
+    width: 100%;
+    height: 100%;
+
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    border-radius: 20px;
+}
+#loadDiv input{
+    width: 60%;
+}
+#loadDiv label{
+    font-size: 2rem;
+    color: rgb(124, 124, 124);
+}
+#loadDiv button{
+    width: 30%;
+    height: 25px;
+    border-radius: 20px;
+    background-color: rgb(210, 210, 210);
+}
+#loadDiv button:hover{
+    background-color: rgb(60, 114, 209);
+    color: white;
+}

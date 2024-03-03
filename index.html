@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, i    nitial-scale=1.0">
+    <link rel="stylesheet" href="Style/style.css">
+    
+    <link rel="stylesheet" href="Style/styleDivWithImgAndBox.css">
+    <link rel="stylesheet" href="Style/stylePropertiesBox.css">
+    <link rel="stylesheet" href="Style/styleShapesBox.css">
+
+    <link rel="stylesheet" href="Style/styleSideBar.css">
+    <link rel="stylesheet" href="Style/styleSvg.css">
+
+    <link rel="stylesheet" href="Style/styleSaveANDloadDiv.css">
+    <link rel="stylesheet" href="Style/styleSaveDiv.css">
+    <link rel="stylesheet" href="Style/styleLoadDiv.css">
+
+    <link rel="stylesheet" href="Style/styleNetwork.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur:wght@600&family=Tilt+Prism&display=swap" rel="stylesheet">
+      
+    <title>Drawing board</title>
+</head>
+<body>
+    <nav id ='sideBar'>
+        <div id="divLogo"></div>
+        <button title="Create Shapes" class= 'buttonsSideBar ShapesButtonClass' id = 'ShapesButton'></button>
+        <button title="Create Text" class= 'buttonsSideBar TextButtonClass' id = 'TextButton'></button>
+        <button title="Properties Shape" class= 'buttonsSideBar PropertiesButtonClass' id = 'PropertiesButton'></button>
+        <button title="Save" class= 'buttonsSideBar SaveButtonClass' id = 'SaveButton'></button>
+        <button title="Load" class= 'buttonsSideBar LoadButtonClass' id = 'LoadButton'></button>
+    </nav>
+    <div id="divFather-Shapes-Properties">
+            <div id="box-shapes">
+                <button class= 'buttonsElement CircleButtonClass' id = 'circleBtn'><img class="CircleButtonClass" src="Style/imgShapes/ImgBeforeClick/Circle.png" alt="CircleImg"><p class="CircleButtonClass">Circle</p></button>
+                <button class= 'buttonsElement SquareButtonClass' id = 'squareBtn'><img class="SquareButtonClass" src="Style/imgShapes/ImgBeforeClick/Square.png" alt="SquareImg"><p class="SquareButtonClass" >Square</p></button>
+                <button class= 'buttonsElement RectangleButtonClass' id = 'rectangleBtn'><img class="RectangleButtonClass" src="Style/imgShapes/ImgBeforeClick/Rectangle.png" alt="RectangleImg"><p class="RectangleButtonClass">Rectangle</p></button>
+                <button class= 'buttonsElement EllipseButtonClass' id = 'ellipseBtn'><img class="EllipseButtonClass" src="Style/imgShapes/ImgBeforeClick/Ellipse.png" alt="EllipseImg"><p class="EllipseButtonClass">Ellipse</p></button>
+            </div>
+
+            <div id="PropertiesBox">
+
+                <div class='Setting-Shape' id = 'Setting-Circle'>
+                    <div>
+                        <h1>Circle Settings</h1>
+                        <label for="radius">Enter radius<input id = 'Setting-Circle-Radius-Input' type="number" placeholder="Enter radius"></label>
+                        <label for="x">Enter a position on the x<input id = 'Setting-Circle-X-Input' type="number" placeholder="Enter a position on the x"></label>
+                        <label for="y">Enter a position on the y<input id = 'Setting-Circle-Y-Input' type="number" placeholder="Enter a position on the y"></label>
+                        <input id = 'Setting-Circle-Color-Input' type="color" id="colorPicker">
+                    </div>
+                </div>
+
+                <div class='Setting-Shape' id = 'Setting-Square'>
+                    <div>
+                        <h1>Square Settings</h1>
+                        <label for="width">Enter width<input id = 'Setting-Square-Width-Input' type="number" placeholder="Enter width"></label>
+                        <label for="height">Enter height<input id = 'Setting-Square-Height-Input' type="number" placeholder="Enter height"></label>
+                        <label for="x">Enter a position on the x<input id = 'Setting-Square-X-Input' type="number" placeholder="Enter a position on the x"></label>
+                        <label for="y">Enter a position on the y<input id = 'Setting-Square-Y-Input' type="number" placeholder="Enter a position on the y"></label>
+                        <input id = 'Setting-Square-Color-Input' type="color" id="colorPicker">
+                    </div>
+                </div>
+
+                <div class='Setting-Shape' id = 'Setting-Rectangle'>
+                    <div>
+                        <h1>Rectangle Settings</h1>
+                        <label for="width">Enter width<input id = 'Setting-Rectangle-Width-Input' type="number" placeholder="Enter width"></label>
+                        <label for="height">Enter height<input id = 'Setting-Rectangle-Height-Input' type="number" placeholder="Enter height"></label>
+                        <label for="x">Enter a position on the x<input id = 'Setting-Rectangle-X-Input' type="number" placeholder="Enter a position on the x"></label>
+                        <label for="y">Enter a position on the y<input id = 'Setting-Rectangle-Y-Input' type="number" placeholder="Enter a position on the y"></label>
+                        <input id = 'Setting-Rectangle-Color-Input' type="color" id="colorPicker">
+                    </div>
+                </div>
+
+                <div class='Setting-Shape' id = 'Setting-Ellipse'>
+                    <div>
+                        <h1>Ellipse Settings</h1>
+                        <label for="x">Enter a position on the x<input id = 'Setting-Ellipse-X-Input' type="number" placeholder="Enter a position on the x"></label>
+                        <label for="y">Enter a position on the y<input id = 'Setting-Ellipse-Y-Input' type="number" placeholder="Enter a position on the y"></label>
+                        <label for="width">Enter width<input id = 'Setting-Ellipse-Width-Input' type="number" placeholder="Enter width"></label>
+                        <label for="height">Enter height<input id = 'Setting-Ellipse-Height-Input' type="number" placeholder="Enter height"></label>
+                        <input id = 'Setting-Ellipse-Color-Input' type="color" id="colorPicker">
+                    </div>
+                </div>
+
+                <div class='Setting-Shape' id = 'Setting-Text'>
+                    <div>
+                        <h1>Text Settings</h1>
+                        <label for="value">Enter Text<input id = 'Setting-Text-Value-Input' type="text" placeholder="Enter Text"></label>
+                        <label for="x">Enter a position on the x<input id = 'Setting-Text-X-Input' type="number" placeholder="Enter a position on the x"></label>
+                        <label for="y">Enter a position on the y<input id = 'Setting-Text-Y-Input' type="number" placeholder="Enter a position on the y"></label>
+                        <label for="size">Enter font Size<input id = 'Setting-Text-Size-Input' type="number" placeholder="Enter font Size"></label>
+                        <label for="color">Enter Color<input id = 'Setting-Text-Color-Input' type="color" placeholder="Enter font Size"></label>
+                    </div>
+                </div>
+            </div>
+    </div>
+   
+    <div id ='boardDiv'></div>
+
+    <div id="saveANDloadDiv">
+        <div id="saveDiv">
+            <label>Enter Name Project</label>
+            <input type="text">
+            <button>Save</button>
+        </div>
+        <div id="loadDiv">
+            <label>Select You Project</label>
+                <input type="text" list="options">
+                <datalist id="options">
+                  </datalist>
+                  <button>Load</button>
+        </div>
+    </div>
+
+    <!-- <script src="JavaScript/ShapesComponnets/CircleElement.js"></script>
+    <script src="JavaScript/ShapesComponnets/SquareElement.js"></script>
+    <script src="JavaScript/ShapesComponnets/RectangleElement.js"></script>
+    <script src="JavaScript/ShapesComponnets/EllipseElement.js"></script>
+    <script src="JavaScript/ShapesComponnets/TextElement.js"></script> -->
+
+    <!-- <script src="JavaScript/MiniSquares/MiniSquaresEllipse.js"></script>
+    <script src="JavaScript/MiniSquares/MiniSquaresCircle.js"></script>
+    <script src="JavaScript/MiniSquares/MiniSquaresRectangle.js"></script>
+    <script src="JavaScript/MiniSquares/MiniSquaresSquare.js"></script>
+    <script src="JavaScript/MiniSquares/MiniSquaresText.js"></script>
+
+    <script src="JavaScript/InputsSettingElements/InputsCircle.js"></script>
+    <script src="JavaScript/InputsSettingElements/InputsEllipse.js"></script>
+    <script src="JavaScript/InputsSettingElements/InputsRectangle.js"></script>
+    <script src="JavaScript/InputsSettingElements/InputsSquare.js"></script>
+    <script src="JavaScript/InputsSettingElements/InputsText.js"></script>
+
+    <script src="JavaScript/GeneralComponnets/TaskManager.js"></script>
+
+    <script src="JavaScript/ElementsOnBody/Board.js"></script>
+    <script src="JavaScript/ElementsOnBody/DivFatherShapProp.js"></script>
+    <script src="JavaScript/ElementsOnBody/ShapesBox.js"></script>
+    <script src="JavaScript/ElementsOnBody/SideBar.js"></script>
+    <script src="JavaScript/ElementsOnBody/PropertiesBox.js"></script>
+
+    <script src="JavaScript/SaveAndLoad/SaveANDloadDiv.js"></script>
+    <script src="JavaScript/SaveAndLoad/Save.js"></script>
+    <script src="JavaScript/SaveAndLoad/Load.js"></script>
+
+    <script src="JavaScript/GeneralComponnets/MainComponnet.js"></script> -->
+
+    <script type="module" src="./JavaScript/Base/main.js"></script>
+    
+
+
+</body>
+</html>

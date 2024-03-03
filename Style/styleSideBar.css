@@ -1,0 +1,85 @@
+#sideBar{
+    /* background-color: #8C8989; */
+    background-image: linear-gradient(to right, rgba(64, 63, 63, 0.75), rgba(103, 103, 103, 0.55));
+
+    width: 80px;
+    height: 100%;
+    min-width: 80px;
+    min-height: 360px;
+}
+
+#divLogo{
+    width: 100%;
+    height: 8%;
+    min-width: 60px;
+    min-height: 60px;
+    background-image: url(img/LogoLionEyalLavi.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#sideBar img{
+    width: 80%;
+    height: 80%;
+    display: block;
+    min-height: 40px;
+    min-width: 40px;
+}
+#sideBar button{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 60px;
+   min-width: 60px;
+   
+}
+.buttonsSideBar{
+    /* background-color: #8C8989; */
+    background-color: transparent;
+    width:100%;
+    height: 8%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.buttonsSideBar:hover{
+    background-color: #B3B3B3;
+}
+
+#ShapesButton{
+    background-image: url(img/shapesimg.png);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+#TextButton{
+    background-image: url(img/textimg.png);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+#PropertiesButton{
+    background-image: url(img/propertiesimg.png);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+#SaveButton{
+    background-image: url(img/saveimg.png);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+#LoadButton{
+    background-image: url(img/loadimg.png);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+#LoadNetwork{
+    background-image: url(img/intternet.png);
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+}

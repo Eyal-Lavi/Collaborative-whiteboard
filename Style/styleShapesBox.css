@@ -1,0 +1,38 @@
+#box-shapes img{
+    width: 30%;
+    height: 100%;
+    margin-right: 15px;
+}
+#box-shapes{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    flex-direction: column;
+}
+
+.buttonsElement{
+    background-color: transparent;
+    width:100%;
+    height: 10%;
+    min-height: 64px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.buttonsElement:hover{
+    background-color: #B3B3B3;
+}
+#box-shapes img{
+    width: 64px;
+    height: 64px;
+}
+#rectangleBtn img{
+    width: 98px;
+    height: 53px;
+}
+#ellipseBtn img{
+    width: 98px;
+    height: 53px;
+}

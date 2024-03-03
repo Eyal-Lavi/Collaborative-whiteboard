@@ -1,0 +1,13 @@
+#saveANDloadDiv{
+    /* display: none; */
+    position: absolute;
+    width: 30%;
+    height: 30%;
+}
+@media (max-width: 700px) {
+    #saveANDloadDiv{
+        width: 80%;
+        height: 50%;
+        left: 80px;
+    }
+}

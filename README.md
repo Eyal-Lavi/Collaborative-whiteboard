@@ -1,16 +1,19 @@
-# Collaborative whiteboard
+# Collaborative board
 
 I created a drawing board,
 Without client side development technology but only using clean js
 that you can draw and work on the same drawing with friends live
-You can also draw alone without cooperative mode and save the drawings for the next time we want to draw and continue from the same point where we stopped.
+You can also draw alone without cooperation mode and save the drawings for the next time we want to draw and continue from the same point where we stopped.
 
-## Client side technologies
+## Technologies on the client side
 - Js
-- Html
+- HTML
 - Css
 ## Server-side technologies
 - Node.js
 
-## means of communication between users
--Socket
+## Means of communication between users
+-socket
+
+# This is a version without shared drawing option
+# The collaborative version can be found in the -online- folder

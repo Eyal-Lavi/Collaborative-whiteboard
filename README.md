@@ -27,14 +27,42 @@ If a user enters a name of a room that does not exist then it
    Opens a new room, if the room exists it creates a new room.
 There cannot be a situation where two users enter the same room with the same name.
 
-## Technologies on the client side
-- Js
-- HTML
-- Css
-## Server-side technologies
-- Node.js
-
-## Means of communication between users
-- socket
+## Technologies Used
+- **Client-Side:**
+  - JavaScript
+  - HTML
+  - CSS
+- **Server-Side:**
+  - Node.js
+  - Express
+  - Socket.io
 
 # The collaborative version files can be found in the -online- folder
+
+## Setup Instructions
+
+### Client
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/username/repo-name.git
+2. Navigate to the client directory
+   cd repo-name/client
+4. Open "index.html" in your web browser.
+
+### Server
+1. Navigate to the server directory:
+   cd repo-name/server
+2. Install the dependencies:
+   ```bash
+   npm install
+3. Start the server:
+   ```bash
+   node server.js
+
+ ### Usage
+     1. Client:
+          Use the sidebar to create new shapes or load an existing project.
+          Click on shapes to edit their properties.
+     2. Server:
+          Manages user connections and real-time collaboration.
+          Listens on port 8080 by default.

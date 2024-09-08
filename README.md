@@ -6,7 +6,7 @@ All information passes through sockets between all users connected to the same r
 
 
 # Click on the image to see the video about the project:
-[![Watch the video](https://i.ytimg.com/vi/lNyhSA_tsoA/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG\u0026rs=AOn4CLAG7v0PENaHYST29gr0kLy5w9u3Eg)](https://www.youtube.com/watch?v=lNyhSA_tsoA)
+[![Watch the video](https://i9.ytimg.com/vi/0BXKZgwE8IU/mqdefault.jpg?v=66ddab01&sqp=CLTZ9rYG&rs=AOn4CLBStslHhM7ZTP3HoNfA2GKSex75wg)](https://www.youtube.com/watch?v=0BXKZgwE8IU)
 
 * Shapes can be added
 * They can be dragged using the mouse
